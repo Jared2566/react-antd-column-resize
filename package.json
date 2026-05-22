@@ -1,0 +1,64 @@
+{
+  "name": "react-antd-column-resize",
+  "version": "1.0.0",
+  "description": "A React hook for resizable columns in Ant Design Table component",
+  "main": "dist/react-antd-column-resize.es.js",
+  "module": "dist/react-antd-column-resize.es.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/react-antd-column-resize.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-antd-column-resize.es.js",
+      "require": "./dist/react-antd-column-resize.umd.js"
+    },
+    "./style": "./dist/react-antd-column-resize.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --fix"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "keywords": ["react", "antd", "table", "resize", "columns", "hook"],
+  "author": "Your Name",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "antd": ">=4.0.0"
+  },
+  "dependencies": {
+    "react-resizable": "^3.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
+    "@types/react": "^19.1.9",
+    "@types/react-resizable": "^3.0.8",
+    "eslint": "^9.33.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.5.1",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.40.0",
+    "vite": "^7.1.3",
+    "vite-plugin-dts": "^4.0.0"
+  }
+}

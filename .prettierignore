@@ -1,0 +1,3 @@
+dist/
+.editorconfig
+eslint.config.mts
