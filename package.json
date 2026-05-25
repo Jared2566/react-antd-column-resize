@@ -1,5 +1,5 @@
 {
-  "name": "react-antd-column-resize",
+  "name": "react-antd-resize",
   "version": "1.0.0",
   "description": "A React hook for resizable columns in Ant Design Table component",
   "main": "dist/react-antd-column-resize.es.js",
@@ -37,7 +37,19 @@
   },
   "keywords": ["react", "antd", "table", "resize", "columns", "hook"],
   "author": "Your Name",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jared2566/react-antd-column-resize.git"
+  },
+  "homepage": "https://github.com/Jared2566/react-antd-column-resize#readme",
+  "bugs": {
+    "url": "https://github.com/Jared2566/react-antd-column-resize/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",

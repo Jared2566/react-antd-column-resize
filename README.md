@@ -1,15 +1,15 @@
-# react-antd-column-resize
+# react-antd-resize
 
 一个用于 Ant Design Table 组件的可调整列宽 React Hook。
 
 ## 安装
 
 ```bash
-npm install react-antd-column-resize
+npm install react-antd-resize
 # 或
-yarn add react-antd-column-resize
+yarn add react-antd-resize
 # 或
-pnpm add react-antd-column-resize
+pnpm add react-antd-resize
 ```
 
 ## 使用方法
@@ -20,10 +20,10 @@ pnpm add react-antd-column-resize
 
 ```tsx
 // 方式一：在组件中导入
-import "react-antd-column-resize/style";
+import "react-antd-resize/style";
 
 // 方式二：在全局样式文件中导入
-import "react-antd-column-resize/dist/react-antd-column-resize.css";
+import "react-antd-resize/dist/react-antd-column-resize.css";
 ```
 
 ### 在 Next.js 中使用
@@ -34,8 +34,8 @@ import "react-antd-column-resize/dist/react-antd-column-resize.css";
 "use client";
 import React from "react";
 import { Table } from "antd";
-import { useAntdColumnResize } from "react-antd-column-resize";
-import "react-antd-column-resize/style"; // 必须导入样式！
+import { useAntdColumnResize } from "react-antd-resize";
+import "react-antd-resize/style"; // 必须导入样式！
 
 export default function MyTable() {
   const columns = [
@@ -94,8 +94,8 @@ export default function MyTable() {
 ```tsx
 import React from "react";
 import { Table } from "antd";
-import { useAntdColumnResize } from "react-antd-column-resize";
-import "react-antd-column-resize/style"; // 必须导入样式！
+import { useAntdColumnResize } from "react-antd-resize";
+import "react-antd-resize/style"; // 必须导入样式！
 
 function MyTable() {
   const columns = [
@@ -180,7 +180,7 @@ const config = {
 
 1. **是否导入了样式文件**
    ```tsx
-   import "react-antd-column-resize/style";
+   import "react-antd-resize/style";
    ```
 
 2. **列是否设置了 width 属性**
@@ -204,4 +204,4 @@ const config = {
 
 ## 许可证
 
-ISC
+MIT
